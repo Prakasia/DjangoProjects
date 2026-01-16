@@ -1,0 +1,20 @@
+{% extends 'onboardingapp/base.html' %}
+
+{% block content %}
+    <div class = "jumbotron">
+        <h3>Here are your saved details.</h3>
+        <p><strong>Username:</strong>{{ user.employee.username }}</p>
+        <p><strong>Email:</strong>{{ user.employee.email }}</p>
+        {% if user.profile_img %}
+            <img src="{{ user.profile_img.url }}" alt="No Image" width="150">
+        {% endif %}
+
+        {% if user.profile_url %}
+            <p>
+                <a href="{{ user.profile_url }}" target="_blank">
+                    {{ user.profile_url }}
+                </a> 
+            </p>
+        {% endif %}
+    </div>
+{% endblock %}
