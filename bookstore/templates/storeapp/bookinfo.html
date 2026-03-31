@@ -1,0 +1,12 @@
+{% extends "storeapp/base.html" %}
+
+{% block content %}
+    <h1>Available books</h1>
+    <div class="container">
+        <ul>
+            {% for book, author in books.items %}
+                <li><strong>{{ book }}</strong> by {{ author }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endblock content %}  
