@@ -1,0 +1,11 @@
+# Core Framework
+django==1.11
+
+# Web Server for Azure (Linux)
+gunicorn==19.9.0
+
+# Essential for serving CSS/Images on Azure
+# whitenoise==3.3.1
+
+# Optional: If you plan to use environment variables
+# django-environ==0.4.5
