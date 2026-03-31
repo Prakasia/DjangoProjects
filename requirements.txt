@@ -1,0 +1,5 @@
+# Core Framework
+django==1.11.29
+
+# Web Server for Azure (Linux)
+gunicorn==19.9.0
